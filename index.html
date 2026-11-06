@@ -5,29 +5,24 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light only">
-<title>Winter Pipeline 2026-2027 | Mow It All</title>
+<title>Winter Pipeline</title>
 <style>
 html,body{height:100%;margin:0;background:#ede9f3;color:#3d3548;font:15px 'Segoe UI',Arial,sans-serif}
 body{display:flex;align-items:center;justify-content:center}
-.c{background:#fff;border-radius:14px;box-shadow:0 2px 24px rgba(40,15,70,.15);padding:30px 34px;max-width:380px;text-align:center}
-h1{margin:0 0 6px;font-size:20px;color:#3b1259}
-p{margin:0 0 18px;color:#6b6178;font-size:13.5px;line-height:1.5}
-a.b{display:inline-block;background:#6b21c7;color:#fff;text-decoration:none;font-weight:600;padding:10px 26px;border-radius:24px}
-small{display:block;margin-top:18px;color:#8a8196;font-size:11px}
 </style>
 </head>
 <body>
-<div class="c">
-<h1>Winter Pipeline 2026-2027</h1>
-<p>Mow It All sales pipeline. Press the button to open it.</p>
-<a class="b" id="go" href="https://script.google.com/macros/s/AKfycbwqZL066SbXftjgG8eY62pJJE-Ry_fE2WBSauu2glxap9eDApJqMHLUcjVpuOuyTrkt/exec">Open the pipeline</a>
-<small>Powered by Elite Business Consultants</small>
-</div>
+<p id="m">Opening…</p>
 <script>
-/* The one place to edit when the live link changes: the Google Apps Script web app link ending in /exec (the href above). */
-/* Everything after the address (for example ?code=ACCESSCODE) is passed on, so personal links keep working. */
-var a = document.getElementById('go');
-a.href = a.href.split('?')[0] + location.search;
+/* The one line to edit when the live link changes: the Google Apps Script web app link, the one ending in /exec. */
+var TARGET = "https://script.google.com/macros/s/AKfycbwqZL066SbXftjgG8eY62pJJE-Ry_fE2WBSauu2glxap9eDApJqMHLUcjVpuOuyTrkt/exec";
+/* Everything after the address (for example ?c=ACCESSCODE) is passed on, so personal links keep working. */
+if (!TARGET) {
+  document.getElementById('m').textContent = 'This link is not set up yet.';
+} else {
+  location.replace(TARGET + location.search);
+}
 </script>
+<noscript><p>Please turn on JavaScript to open the pipeline.</p></noscript>
 </body>
 </html>
