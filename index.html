@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light only">
+<title>Winter Pipeline</title>
+<style>
+html,body{height:100%;margin:0;background:#ede9f3;color:#3d3548;font:15px 'Segoe UI',Arial,sans-serif}
+body{display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<p id="m">Opening…</p>
+<script>
+/* The one line to edit when the live link changes: the Google Apps Script web app link, the one ending in /exec. */
+var TARGET = "";
+/* Everything after the address (for example ?c=ACCESSCODE) is passed on, so personal links keep working. */
+if (!TARGET) {
+  document.getElementById('m').textContent = 'This link is not set up yet.';
+} else {
+  location.replace(TARGET + location.search);
+}
+</script>
+<noscript><p>Please turn on JavaScript to open the pipeline.</p></noscript>
+</body>
+</html>
